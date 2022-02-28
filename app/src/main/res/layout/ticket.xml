@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="3pt"
+        android:background="@drawable/background_layout">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="#1545D5"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is the content text and it should be larger in order to see it's way of displaying on multiple rows" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100sp"
+                android:layout_height="40sp"
+                android:layout_marginRight="8pt"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/delete" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100sp"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/pencil" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
